@@ -1,10 +1,13 @@
+.body{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
 .conteiner {
     max-width: 1200px;
     margin: auto;
 }
-.body{
-    font-family: 'Roboto', sans-serif;
-    padding-top: 44px;
+.main{
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 
 
@@ -21,12 +24,13 @@
     background-position: left 11px center;
 }
 .input-address {
-    width: 690px;
+    flex: 0.8;
     background-image: url(../img/home.svg);
 }
 .input-search{
     width: 306px;
     background-image: url(../img/search.svg);
+    margin-left: auto;
 }
 
 /* ---------Header.Start--------- */
@@ -52,6 +56,9 @@
     display: flex;
     align-items: center;
 }
+.button-card-text {
+    margin-right: 10px;
+  }
 .button-primary {
     color: #595959;
     background: #1890FF;
@@ -94,7 +101,6 @@
 .section-heading{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 44px;
 }
 .section-title{
@@ -103,6 +109,7 @@
     font-size: 36px;
     line-height: 42px;
     margin: 0;
+    margin-right: 30px;
 }
 
 /* ---------Cards--------- */
@@ -118,6 +125,8 @@
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 30px;
+    flex-basis: 30%;
+    text-decoration: none;
 }
 .card-image{
     width: 384px;
@@ -139,6 +148,33 @@
     font-size: 24px;
     line-height: 32px;
 }
+.card-info-p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+.card-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.card-title-reg{
+    font-weight: 400;
+    font-family: Roboto;
+}
+.ingredients {
+    font-size: 18px;
+    line-height: 21px;
+    color: #8c8c8c;
+}
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 30px;
+    font-family: Roboto;
+}
 .card-tag{
     font-style: normal;
     font-weight: normal;
@@ -150,10 +186,11 @@
     color: #FFFFFF;
     padding: 1px 8px;
 }
-
 .card-info{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 .rating{
     margin-right: 26px;
@@ -185,3 +222,40 @@
     border-radius: 50%;
     margin-left: 10px;
 }
+
+
+.footer{
+    padding: 60px 0px;
+}
+.footer-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-nav{
+
+    margin-left: 40px;
+    margin-right: auto;
+
+}
+.footer-link{
+    display: inline-block;
+    color: #595959;
+    text-decoration: none;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.footer-link:not(:last-child){
+    margin-right: 15px;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-link:not(:last-child){
+    margin-right: 22px;
+}
+
